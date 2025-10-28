@@ -1,0 +1,19 @@
+# Archivos de Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+
+# Carpetas de compilación
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keystore y claves privadas
+*.keystore
+key.properties
+
+# Archivos de sistema
+*.log

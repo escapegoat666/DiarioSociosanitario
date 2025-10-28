@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/fondo_diario_claro">
+
+    <!-- Botón Registrar entrada -->
+    <com.google.android.material.button.MaterialButton
+        style="@style/BotonMorado"
+        android:id="@+id/btnEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar entrada"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón Registrar salida -->
+    <com.google.android.material.button.MaterialButton
+        style="@style/BotonMorado"
+        android:id="@+id/btnSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar salida"
+        android:layout_below="@id/btnEntrada"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Icono Créditos -->
+    <ImageButton
+        android:id="@+id/btnCreditos"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Créditos"
+        android:src="@drawable/ic_creditos" />
+
+    <!-- Botón Historial -->
+    <com.google.android.material.button.MaterialButton
+        style="@style/BotonMorado"
+        android:id="@+id/btnHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Historial"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/btnCreditos"
+        android:layout_toStartOf="@id/btnAjustes"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Icono Ajustes -->
+    <ImageButton
+        android:id="@+id/btnAjustes"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Ajustes"
+        android:src="@drawable/ic_ajustes" />
+
+</RelativeLayout>

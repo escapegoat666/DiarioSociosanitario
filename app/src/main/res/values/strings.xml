@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Diario Sociosanitario</string>
+    <string name="usuario_hint">Usuario</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.SeleccionHistorialActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/fondo_diario_claro">
+
+    <Button
+        android:id="@+id/btnResumenDiario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen diario"
+        android:textSize="18sp"
+        android:background="?attr/colorPrimary"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnResumenMensual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen mensual"
+        android:textSize="18sp"
+        android:background="?attr/colorPrimary"
+        android:textColor="?android:textColorPrimaryInverse" />
+</LinearLayout>

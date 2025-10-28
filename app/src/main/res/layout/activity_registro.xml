@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextoTitulo"
+        android:text="Nombre del usuario visitado"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        style="@style/CampoEntrada"
+        android:hint="Ej. María Gómez"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnRegistrarEntrada"
+        style="@style/BotonEntrada"
+        android:text="Registrar entrada"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnRegistrarSalida"
+        style="@style/BotonSalida"
+        android:text="Registrar salida"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btnCreditos"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:layout_marginEnd="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Créditos"
+            android:src="@drawable/ic_creditos"
+            android:tint="#666666"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/btnHistorial"
+            style="@style/BotonHistorial"
+            android:text="Historial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp" />
+
+        <ImageButton
+            android:id="@+id/btnAjustes"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Ajustes"
+            android:src="@drawable/ic_ajustes"
+            android:tint="#666666"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

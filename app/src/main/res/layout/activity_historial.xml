@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutHistorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondo_diario_claro"
+    tools:context=".ui.HistorialMensualActivity">
+
+    <!-- Botón para ver día -->
+    <Button
+        android:id="@+id/btnVerDia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Día"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Selector de mes y año -->
+    <LinearLayout
+        android:id="@+id/layoutMesAnio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Spinner
+            android:id="@+id/spinnerMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerAnio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCargarMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargar Mes"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Lista de visitas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVisitas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:paddingBottom="8dp" />
+
+    <!-- Resumen -->
+    <TextView
+        android:id="@+id/txtResumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="#3F51B5"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

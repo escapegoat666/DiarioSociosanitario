@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.diariosociosanitario">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Diario Sociosanitario"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DiarioSociosanitario">
+
+        <!-- Actividad principal con navegación por fragments -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividades funcionales -->
+        <activity android:name=".ui.NuevaVisitaActivity" />
+        <activity android:name=".ui.RestaurarActivity" />
+        <activity android:name=".ui.ExportarActivity" />
+        <activity android:name=".ui.ExportarPdfActivity" />
+        <activity android:name=".ui.AjustesActivity" />
+        <activity android:name=".ui.ImportarActivity" />
+        <activity android:name=".ui.RegistrarSalidaActivity" />
+        <activity android:name=".ui.RegistrarEntradaActivity" />
+        <activity android:name=".ui.CreditosActivity" />
+        <activity android:name=".ui.EditarVisitaActivity" />
+        <activity android:name=".ui.SeleccionHistorialActivity" /> <!-- ✅ Pantalla intermedia -->
+        <activity android:name=".ui.HistorialMensualActivity" />   <!-- ✅ Nueva actividad mensual -->
+        <activity android:name=".ui.HistorialDiarioActivity" />    <!-- ✅ Nueva actividad diaria -->
+
+    </application>
+
+</manifest>
